@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Site com Paleta Harmônica</title>
+    <style>
+        /* Cores principais */
+        :root {
+            --cor-primaria: #4a4e69;
+            --cor-secundaria: #9a8c98;
+            --cor-fundo: #f2e9e4;
+            --cor-texto: #22223b;
+            --cor-destaque: #c9ada7;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        aside {
+            background-color: var(--cor-secundaria);
+            padding: 20px;
+            color: white;
+        }
+
+        footer {
+            background-color: var(--cor-primaria);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .botao {
+            background-color: var(--cor-destaque);
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .botao:hover {
+            background-color: var(--cor-secundaria);
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        article {
+            flex: 3;
+        }
+
+        aside {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site Colorido</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Bem-vindo!</h2>
+                <p>Este é um site exemplo utilizando uma paleta de cores harmônica gerada com a ajuda do ChatGPT e do site Colormind.</p>
+                <button class="botao">Clique Aqui</button>
+            </section>
+        </article>
+
+        <aside>
+            <h3>Dica Rápida</h3>
+            <p>Use cores complementares para dar contraste e melhorar a legibilidade.</p>
+        </aside>
+    </main>
+
+    <footer>
+        &copy; 2025 - Desenvolvido por Michel Cardoso
+    </footer>
+
+</body>
+</html>

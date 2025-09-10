@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Responsivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .campo {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .campo input {
+      width: 100%;
+      padding: 10px 10px 10px 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .campo::before {
+      content: "👤";
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 16px;
+      color: #888;
+    }
+
+    .campo.senha::before {
+      content: "🔒";
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .botoes button {
+      width: 48%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4a90e2;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .botoes button::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: white;
+      transition: width 0.3s ease;
+    }
+
+    .botoes button:hover::after {
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        width: 100%;
+        border-radius: 0;
+      }
+
+      .botoes {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .botoes button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Login</h2>
+    <form>
+      <div class="campo usuario">
+        <input type="text" placeholder="Nome de Usuário" required>
+      </div>
+      <div class="campo senha">
+        <input type="password" placeholder="Senha" required>
+      </div>
+      <div class="botoes">
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+div{
+    width: 600px;
+    height: 800px;
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    color: black;
+    font-size: large;
+    background-color: rgb(202, 202, 183);
+    border: 5px solid rgb(0, 0, 0);
+}
+#header-curriculo{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+}
+#header-formacao{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}

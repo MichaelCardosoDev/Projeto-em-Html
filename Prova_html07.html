@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo com Variáveis CSS</title>
+  <style>
+    /* Variáveis globais (tamanho médio) */
+    :root {
+      --font-size-header: 24px;
+      --font-size-body: 16px;
+      --spacing: 20px;
+    }
+
+    body {
+      font-size: var(--font-size-body);
+      padding: var(--spacing);
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: var(--font-size-header);
+      margin-bottom: var(--spacing);
+    }
+
+    p {
+      margin-bottom: var(--spacing);
+    }
+
+    /* Telas pequenas */
+    @media (max-width: 600px) {
+      :root {
+        --font-size-header: 18px;
+        --font-size-body: 14px;
+        --spacing: 12px;
+      }
+    }
+
+    /* Telas grandes */
+    @media (min-width: 1024px) {
+      :root {
+        --font-size-header: 32px;
+        --font-size-body: 18px;
+        --spacing: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Título Responsivo</h1>
+  <p>Este parágrafo usa variáveis CSS para definir o tamanho da fonte e espaçamentos, adaptando-se ao tamanho da tela.</p>
+</body>
+</html>
+

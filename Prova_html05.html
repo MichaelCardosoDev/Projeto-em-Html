@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox – Três Caixas Centralizadas</title>
+  <style>
+    /* Estilo geral da página */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    /* Contêiner flexível */
+    .container {
+      display: flex;
+      justify-content: center;   /* Centraliza horizontalmente */
+      align-items: center;       /* Centraliza verticalmente */
+      min-height: 100vh;         /* Altura mínima para centralização vertical */
+      background-color: #f0f0f0;
+      gap: 20px;
+    }
+
+    /* Estilo das caixas */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #4a90e2;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">Caixa 1</div>
+    <div class="box">Caixa 2</div>
+    <div class="box">Caixa 3</div>
+  </div>
+
+</body>
+</html>
