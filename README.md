@@ -18,9 +18,7 @@ Inclui exercícios, provas e um projeto final, servindo como prática para a con
 
 - `Projeto_final/` → Contém o projeto final com HTML e CSS  
 - `Prova_html01.html` até `Prova_html07.html` → Exercícios práticos em HTML  
-- `estilo.css`, `estilo2.css` → Arquivos de estilos (CSS)  
-- `logica.js` → Arquivo com exemplos de lógica em JavaScript  
-
+ 
 ---
 
 ## ⚙️ Tecnologias Utilizadas  
